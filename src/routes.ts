@@ -1,0 +1,110 @@
+import { UserController } from "./controller/UserController"
+import { ArticleController } from "./controller/ArticleController"
+
+export const Routes = [{
+    method: "get",
+    route: "/users",
+    controller: UserController,
+    action: "all"
+}, {
+    method: "get",
+    route: "/users/:id",
+    controller: UserController,
+    action: "one"
+}, {
+    method: "post",
+    route: "/users",
+    controller: UserController,
+    action: "save"
+}, {
+    method: "delete",
+    route: "/users/:id",
+    controller: UserController,
+    action: "remove"
+}, {
+    method: "get",
+    route: "/articles",
+    controller: ArticleController,
+    action: "all"
+}, {
+    method: "get",
+    route: "/articles/:id",
+    controller: ArticleController,
+    action: "one"
+}, {
+    method: "post",
+    route: "/articles",
+    controller: ArticleController,
+    action: "save"
+}, {
+    method: "delete",
+    route: "/articles/:id",
+    controller: ArticleController,
+    action: "remove"
+}, {
+    method: "put",
+    route: "/articles/:id",
+    controller: ArticleController,
+    action: "update"
+}, {
+    method: "get",
+    route: "/authors",
+    controller: AuthorController,
+    action: "all"
+}, {
+    method: "get",
+    route: "/authors/:id",
+    controller: AuthorController,
+    action: "one"
+}, {
+    method: "post",
+    route: "/authors",
+    controller: AuthorController,
+    action: "save"
+}, {
+    method: "delete",
+    route: "/authors/:id",
+    controller: AuthorController,
+    action: "remove"
+}, {
+    method: "put",
+    route: "/authors/:id",
+    controller: AuthorController,
+    action: "update"
+}, {
+    method: "get",
+    route: "/members",
+    controller: MemberController,
+    action: "all"
+}, {
+    method: "get",
+    route: "/members/:id",
+    controller: MemberController,
+    action: "one"
+}, {
+    method: "post",
+    route: "/members",
+    controller: MemberController,
+    action: "save"
+}, {
+    method: "delete",
+    route: "/members/:id",
+    controller: MemberController,
+    action: "remove"
+}, {
+    method: "put",
+    route: "/members/:id",
+    controller: MemberController,
+    action: "update"
+}, {
+    method: "get",
+    route: "/member-groups",
+    controller: MemberGroupController,
+    action: "all"
+}, {
+    method: "get",
+    route: "/member-groups/:id",
+    controller: MemberGroupController,
+    action: "one"
+},
+]
